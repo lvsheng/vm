@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <title>确认订单</title>
-    <script src="bridge.js"></script>
+    <script src="./bridge.js"></script>
     <script>
+        // 以o2o/为根。引用base/与boost/下模块用绝对路径，引用其他本项目中存在的文件用相对路径
         window.require = { baseUrl: "../" };
     </script>
-    <script data-main="sample/main.js" src="require.js"></script>
+    <script data-main="vm/sample/main.js" src="./require.js"></script>
 </head>
 
 <body>

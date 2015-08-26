@@ -14,8 +14,8 @@ fis.match('**.less', {
 });
 
 fis.match('**', {
-    release: '/o2o/$0',
-    url: '/~lvsheng/o2o/$0'
+    release: '/o2o/vm/$0',
+    url: '/~lvsheng/o2o/vm/$0'
 });
 
 //TODO 暂时不发布，都在js中将文件__inline进来，后面换更合适方案

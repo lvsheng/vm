@@ -1,3 +1,13 @@
 **.DS_Store
-**output
-.idea
+**node_modules/
+**output/
+**.idea/
+
+#源码由ts维护
+**.js.map
+**.js
+#下列源码使用js维护
+!**main.js
+!**require.js
+!**bridge.js
+!**fis-conf.js

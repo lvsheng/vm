@@ -1,5 +1,5 @@
-declare var require;
-import A = require("../../../src/test");
+import {A} from '../../../src/test';
 
-//var a = new A("world");
-window.alert(A);
+var a = new A("world");
+window.alert(a);
+a.sayHi();

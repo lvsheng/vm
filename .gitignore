@@ -1,5 +1,7 @@
 **.DS_Store
-**node_modules/
+#**node_modules/
+!node_modules/fis3-parser-local-tsc/index.js
+
 **output/
 **.idea/
 

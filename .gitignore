@@ -7,7 +7,7 @@
 **.js.map
 **.js
 #下列源码使用js维护
-!**main.js
-!**require.js
-!**bridge.js
-!**fis-conf.js
+!sample/main.js
+!sample/require.js
+!sample/bridge.js
+!build/fis-conf.js

@@ -1,5 +1,6 @@
-import {A} from '../../../src/test';
+import {main, Widget} from '../../../src/main';
 
-var a = new A("world");
-window.alert(a);
-a.sayHi();
+class Order extends Widget {
+
+}
+main.register("order", Order);

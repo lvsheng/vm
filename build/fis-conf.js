@@ -12,17 +12,7 @@ fis.match('**.less', {
     parser: fis.plugin('less'),
     rExt: '.css'
 });
-
-//TODO: 自己写一个小的插件来搞这件事？（用shelljs来exec本地的tsc进行编译）
-//build.sh中编译导致生成的js与map文件都存在于源码位置，影响源码阅读~ 不爽
-//可以使用fis插件来编译ts，但速度有点慢、而且tsc版本低，源码编译时有报错（貌似不支持export from）
-fis.match('**.ts', {
-    parser: fis.plugin('local-tsc', {
-        hello: 'conf'
-    }),
-    rExt: '.js'
-});
-
+//TODO: 写一个使用用户本地安装的tsc来编译，并且能输出.js.map文件的fis插件
 
 fis.match('**', {
     release: '/o2o/vm/$0',

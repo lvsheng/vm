@@ -25,9 +25,9 @@ fis.match('{**.css,sample/**/widget/**.html}', {
 });
 
 //远程部署
-//fis.match('**', {
-//    deploy: fis.plugin('http-push', {
-//        receiver: 'http://fedev.baidu.com/~lvsheng/fis-receiver.php',
-//        to: '/home/lvsheng/public_html'
-//    })
-//});
+fis.match('**', {
+    deploy: fis.plugin('http-push', {
+        receiver: 'http://fedev.baidu.com/~lvsheng/fis-receiver.php',
+        to: '/home/lvsheng/public_html'
+    })
+});
